@@ -76,6 +76,31 @@ figure img:hover {
     background-image: linear-gradient(to right, rgb(140, 251, 255), rgb(196, 253, 255), rgb(140, 251, 255));
 }
 
+#projects {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    width: 100%;
+    
+}
+
+#projects h2 {
+    grid-column: 1/-1;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(145deg, rgb(178, 241, 178), lightgreen, rgb(178, 241, 178));
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
 #skills {
     display: flex;
     background-image: linear-gradient(145deg, white, lightblue, white);
