@@ -66,14 +66,31 @@ a:visited {
 
 #hat-button {
     background-color: blanchedalmond;
-    padding: 5%;
-    width: 50%;
     border-radius: 5%;
     border: 1px solid grey;
     color: black;
-    font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    display: fixed
+    display: fixed;
+    animation-name: button-fade;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+@keyframes button-fade {
+    from {
+        opacity: 1;
+        width: 50%;
+        font-size: 20px;
+        padding: 5%;
+    }
+    to {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        font-size: 1px;
+        padding: 0;
+    }
 }
 
 #hat-button:hover {
@@ -81,10 +98,28 @@ a:visited {
 }
 
 #hat-image {
-    height: 40%;
-    width: 40%;
     margin: 10px;
-    display: none;
+    animation-name: hatfade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hatfade {
+    0% {
+        opacity: 0;
+        height: 10%;
+        width: 10%;
+    }    
+    50% {
+        opacity: 1;
+        height: 60%;
+        width: 60%;
+    }
+    100% {
+        opacity: 1;
+        height: 40%;
+        width: 40%;
+    }
 }
 
 #header {
@@ -204,7 +239,21 @@ h2 {
 }
 
 #project-pending {
-    background-image: linear-gradient(145deg, orange, rgb(255, 255, 104), orange);
+    animation-name: pending-color;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-image: linear-gradient(144deg, #fff27d, #ffff00, #fff27d, #c6eec6, #90ee90, #c6eec6);
+    background-size: 1200% 1200%;
+
+}
+
+@keyframes pending-color {
+    0% {
+        background-position:1%;
+    }
+    100% {
+        background-position: 100%;
+    }
 }
 
 .project-preview {
