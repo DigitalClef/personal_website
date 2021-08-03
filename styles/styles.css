@@ -152,7 +152,7 @@ h2 {
     justify-content: space-around;
     align-items: center;
     animation-name: fadein;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     
 }
