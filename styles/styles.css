@@ -204,9 +204,27 @@ h2 {
 }
 
 .links-figure img {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
+    animation-name: links-icons;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
+
+/* @keyframes links-icons {
+    
+    0% {
+        transform: rotate(15deg)
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+} */
+
 
 #ppe {
     height: 60%;
