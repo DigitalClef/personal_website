@@ -67,8 +67,9 @@ a:visited {
 
 #footer-text {
     display: block;
-    font-size: 2px;
-    transition: font-size 900ms linear;
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 1s linear;
 }
 
 #hat-button {

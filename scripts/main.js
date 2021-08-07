@@ -15,6 +15,6 @@ hatButton.onclick = function() {
 
 window.onscroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        footerText.style.fontSize = '20px';
+        footerText.style.opacity = '1';
     }
 }
