@@ -63,7 +63,12 @@ a:visited {
 
 .footer {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+}
+
+#footer-text {
+    display: block;
+    font-size: 2px;
+    transition: font-size 900ms linear;
 }
 
 #hat-button {
@@ -154,7 +159,6 @@ h2 {
     animation-name: fadein;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-
 }
 
 @keyframes fadein {
@@ -167,7 +171,6 @@ h2 {
         height: 20%;
     }
 }
-
 
 .language-list {
     display: grid;
@@ -263,7 +266,6 @@ h2 {
     animation-fill-mode: forwards;
     background-image: linear-gradient(144deg, #fff27d, #ffff00, #fff27d, #c6eec6, #90ee90, #c6eec6);
     background-size: 1200% 1200%;
-
 }
 
 @keyframes pending-color {
