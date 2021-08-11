@@ -163,11 +163,20 @@ h2 {
 }
 
 @keyframes fadein {
-    from {
+    0% {
         opacity: 0;
         height: 70%;
     }
-    to {
+    65% {
+        height: 35%;
+    }
+    75% {
+        height: 30%;
+    }
+    95% {
+        height: 25%;
+    }
+    100% {
         opacity: 1;
         height: 20%;
     }
