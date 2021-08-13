@@ -22,9 +22,9 @@ a:visited {
 
 .about-info p {
     font-family: 'Roboto', sans-serif;
-    font-size: calc(2vh + 12px);
+    font-size: calc(3vh + 4px);
     text-align: justify;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 2px 20px;
 }
 
